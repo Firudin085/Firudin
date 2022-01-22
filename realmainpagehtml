@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepagecss.css">
+    
+    
+    <link rel="stylesheet" href="style.css">
+    
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>left bar</title> 
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.png" alt="">
+                </span>
+
+                <div class="text logo-text">
+                    <span class="name">My Menu</span>
+                    <span class="profession">Ssvcrypto</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="profileregisterhtml.html">
+                            <i class='bx bx-user icon' ></i>
+                            <span class="text nav-text">Profile</span>
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="login.html">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                <li class="mode">
+                    <div class="sun-moon">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+                    <span class="mode-text text">Dark mode</span>
+
+                    <div class="toggle-switch">
+                        <span class="switch"></span>
+                    </div>
+                </li>
+                
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="home">
+        <div class="text">Ssvcrypto</div>
+    </section>
+
+    <div class="up">
+        <span class="up1">NFT bo'yicha darslar</span>
+    </div>
+
+    <div class="komanda">
+  
+
+    </div>
+    <a href="video.html" target="_self">
+    <div class="center1">
+ 
+        <span class="center1-write">Tanishuv Diqqat bilan tanishib chiqing</span>
+    </div>
+    </a>
+
+
+
+    <a href="#">
+    <div class="center2">
+      <span class="center2-write">Kirish darsi Blockchain va kriptovalyuta</span>
+    </div>
+    </a>
+
+    <a href="#">
+      <div class="center3">
+        <span class= "center3-write">Hamyonlar Binance va Binance Registratsiya va t'g'ri
+             vertifikatsiya qilish</span>
+      </div>
+    </a>
+    <a href="#">
+      <div class="center4">
+        <span class= "center4-write">Hamyonlar Metamask va phantom Registratsiya va to'g'ri verifikatsiy qilish</span>
+      </div>
+    </a>
+  </a>
+  <a href="#">
+    <div class="center5">
+      <span class= "center5-write">Qo'shimcha darslik Kriptovalyuta</span>
+    </div>
+  </a>
+
+  <div class="lower">
+      <div class="social-media">
+
+        <div class="socialicon">
+            <a href="https://www.facebook.com/"><img src="fb1.png"></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKjgFBWbxNFjPdnwBmhZMCKVsjlCNxrZGGMFjFMKjpRhwRLzmpwdFnFjHxzRxxCLKDJcQrQ"><img src="gmail1.png"></a>
+            <a href="https://instagram.com/jakhongir_ssv?utm_medium=copy_link"><img src="instagram.png"></a>
+            <a href="https://t.me/NFTUzbekistan"><img src="tg.png"></a>
+        </div>
+
+        
+      </div>
+      <div class="reserve-up">
+          <span class="medya">Find us on social media</span>
+
+          <div class="reserve">
+              <span class="reserve-write">All rights reserved ©</span>
+          </div>
+      </div>
+    </div>
+
+
+    <script>
+        const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box"),
+      modeSwitch = body.querySelector(".toggle-switch"),
+      modeText = body.querySelector(".mode-text");
+
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+modeSwitch.addEventListener("click" , () =>{
+    body.classList.toggle("dark");
+    
+    if(body.classList.contains("dark")){
+        modeText.innerText = "Light mode";
+    }else{
+        modeText.innerText = "Dark mode";
+        
+    }
+});
+    </script>
+
+</body>
+</html>
